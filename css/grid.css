@@ -1,0 +1,98 @@
+
+/* efnisyfirlit */
+.topmenu {
+    display:flex;
+    flex-flow: column;
+    background-color: rgb(104, 104, 104);
+    padding: 0;
+    list-style-type:none;
+}
+/* nav topmenu tenglar */
+.topmenu a {
+    display: block;
+    color:rgb(255, 255, 255);
+    padding: .5em 2em;
+    text-align: center;
+}
+.topmenu a:visited {
+    color:rgb(218, 245, 254);
+}
+.topmenu a:hover,
+.topmenu a:active {
+    background-color: rgb(153, 214, 242);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.col-31,
+.col-3,
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+@media screen and(min-width:1em) {
+    .col-3 {
+        grid-template-columns: 1fr;
+    }
+    iframe {
+        width:20em;
+        height:12em;
+        margin:0;
+    }
+    .col-31{
+        grid-template-columns: 3fr 1fr; /*ath!*/
+    }
+    
+}
+@media screen and (min-width:37.5em){
+    .col-3 {
+        grid-template-columns:1fr 1fr;
+    }
+    iframe {
+        width: 30em;
+        height:17em;
+      }
+
+}
+@media screen and (min-width:48em){
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .col-2 {
+        grid-template-columns: 1fr 1fr; 
+        gap:1em;
+    }
+    .topmenu {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    iframe {
+        width:40em;
+        height:22em;
+      }
+
+}
+
+@media screen and (min-width:60em){
+    .container {
+        max-width: 60em; /* 1024px skjár*/
+        margin:1em auto;
+    }
+
+}
+
+@media screen and (min-width:80em){
+    .container {
+
+        margin:1em auto; /* top + bottom - left + right = miðjusett */
+    }
+
+}
+

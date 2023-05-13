@@ -1,0 +1,361 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image:url(../images/bg-min.jpg);
+  background-size: auto;
+  font-size:large;
+  line-height:1.6;
+  
+  }
+  
+.year {
+font-size:1.3em;
+color:cadetblue;
+text-align:center;
+
+}
+.chapter{
+font-size:1.3em;
+color:white;
+text-align:center;
+}
+.title{
+font-size:2em;
+color:white;
+}
+.year1 {
+font-size:2em;
+color:cadetblue;
+text-align:center;
+
+}
+
+
+#toc_container {
+background: #202020 none repeat scroll 0 0;
+border: 1px solid rgb(70, 70, 70);
+display: table;
+font-size: 100%;
+margin-bottom: 1em;
+padding: 10px;
+width: auto;
+position:fixed;
+left:-2em;
+
+}
+#TOC {
+width:100%;
+margin-right:0;
+color:white;
+padding:25px;
+font-size: 17px;
+z-index:5;
+
+}
+
+.toc_title {
+font-weight: 700;
+text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+list-style: outside none none !important;
+}
+#myBtn {
+color:white;
+display:none;
+height:40px;
+width:40px;
+position: fixed;
+right: 2em;
+bottom: 2em;
+border-radius: 100%;
+background: #364a93;
+padding: 0.5rem;
+border: 3px solid #435cb4;
+cursor: pointer;
+}
+#myBtn:hover {
+background-color: #555;
+}
+footer {
+padding: 30px;
+margin: 10px;
+
+
+}
+h1 {
+color: rgb(255, 255, 255);
+text-align:center
+}
+h2 {
+color: rgb(255, 255, 255);
+text-align:center;
+margin-left:3em;
+margin-right:3em;
+}
+
+h3 {
+color: rgb(255, 255, 255);
+text-align:center;
+margin-left:3em;
+margin-right:3em;
+}
+p {
+color: rgb(255, 255, 255);
+margin: 0 1em;
+
+}
+
+.text {
+background-color:rgb(37, 37, 37);
+
+
+}
+
+@media screen and (min-width: 80em) {
+  .toc {
+    position: fixed;
+    top:4em;
+    left:2em;
+  }
+
+}
+
+blockquote{
+font-size:large;
+color:white;
+padding:1em;
+background-color: rgb(35, 35, 35);
+text-align:left;
+border-left: 2px solid #fff;
+margin-bottom:-1em;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  
+}
+
+.header-nav-item {
+  padding: 1rem;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .header-nav {
+    grid-template-columns: repeat(3,auto);
+  }
+
+}
+.storycontinue{
+  padding:0px;
+  position:relative;
+  text-align:center;
+  background-color:rgb(35, 35, 35);
+}
+@media screen and (max-width:95em) {
+  .text {
+    margin:auto;
+    
+  }
+  #toc_container {
+    left:0;
+    position:relative;
+  }
+}
+@media screen and (max-width:80em)
+{
+  .text {
+    margin:0;
+    max-width:100%;
+    margin-right:0em;
+  }
+}
+figcaption {
+  text-align:center;
+  color:white;
+  background-color:rgb(35,35,35);
+}
+iframe {
+  margin:1em;
+  
+}
+.youtube {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+  color:white;
+}
+
+table tr {
+  background-color: #333333;
+  border: 1px solid #181818;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  color:white;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+    
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+ /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=email], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=tel], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=date], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: rgb(37,37,37);
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  color:white;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+} 
