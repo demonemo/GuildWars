@@ -1,2 +1,2 @@
 # Guild Wars 2
-Gabríel Alexandersson
+Hönnun: Gabríel Alexandersson
